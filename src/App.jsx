@@ -21,11 +21,11 @@ export default function App() {
         <StatsBar />
         <Marquee />
         <WhoItsFor />
+        <FreeGuide />
         <WhatYouGet />
         <VideoQuote />
         <Proof />
         <About />
-        <FreeGuide />
         <ApplyForm />
         <Instagram />
       </main>

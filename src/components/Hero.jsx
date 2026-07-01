@@ -26,7 +26,7 @@ export default function Hero() {
       <div id="hero">
         {/* ================= MOBILE: short VIDEO cover hero (nickbare style) ================= */}
         <section className="relative flex min-h-[68svh] flex-col justify-end overflow-hidden border-b-2 border-ink bg-ink pt-24 lg:hidden">
-          {/* REPLACE: /running.mp4 — background running clip (poster falls back to photo) */}
+          {/* REPLACE: /running2.mp4 — background running clip (poster falls back to photo) */}
           {/* Zoomed into the centre of the clip so the baked-in text at the top
               (and stats at the bottom) of the video are cropped out of view.
               Tweak scale / object-position if a different part should show. */}
@@ -38,7 +38,7 @@ export default function Hero() {
             poster={bgImage}
             className="absolute inset-0 z-0 h-full w-full origin-center scale-[1.55] object-cover object-center"
           >
-            <source src="/running.mp4" type="video/mp4" />
+            <source src="/running2.mp4" type="video/mp4" />
           </video>
           {/* darken the bottom so the block + scroll cue read cleanly */}
           <div className="absolute inset-0 z-0 bg-gradient-to-t from-ink/85 via-transparent to-ink/20" />

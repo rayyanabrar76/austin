@@ -170,9 +170,9 @@ export const CONTENT = {
   // MOTIVATIONAL QUOTE (giant text with a running video playing through it)
   quote: {
     lines: ['Success Requires', 'Uncompromising', 'Consistency'],
-    // REPLACE: drop a running clip at /public/running.mp4 to play through the text.
+    // REPLACE: drop a running clip at /public/running2.mp4 to play through the text.
     // Until then, the poster image shows through the letters as a fallback.
-    video: '/running.mp4',
+    video: '/running2.mp4',
     poster: '/austin.jpg',
   },
 
