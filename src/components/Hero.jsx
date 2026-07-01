@@ -24,8 +24,8 @@ export default function Hero() {
     <>
       {/* id lives on a wrapper so the nav "logo" scroll works on every breakpoint */}
       <div id="hero">
-        {/* ================= MOBILE: full-screen VIDEO hero (nickbare style) ================= */}
-        <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden border-b-2 border-ink bg-ink pt-24 lg:hidden">
+        {/* ================= MOBILE: short VIDEO cover hero (nickbare style) ================= */}
+        <section className="relative flex min-h-[68svh] flex-col justify-end overflow-hidden border-b-2 border-ink bg-ink pt-24 lg:hidden">
           {/* REPLACE: /running.mp4 — background running clip (poster falls back to photo) */}
           <video
             autoPlay
