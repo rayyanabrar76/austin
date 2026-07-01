@@ -15,7 +15,8 @@ export default function WhoItsFor() {
           <Heading className="mt-4 max-w-3xl">{heading}</Heading>
         </Reveal>
         <Reveal>
-          <p className="mt-5 max-w-2xl text-lg text-ink/70">{copy}</p>
+          {/* Intro paragraph hidden on mobile per request; shown from sm up */}
+          <p className="mt-5 hidden max-w-2xl text-lg text-ink/70 sm:block">{copy}</p>
         </Reveal>
 
         {/* Mobile: swipeable scroll-snap carousel · sm+: 3-col grid */}

@@ -34,7 +34,7 @@ export default function Nav() {
         scrolled ? 'shadow-[0_4px_0_0_rgba(22,22,14,0.12)]' : ''
       }`}
     >
-      <div className="flex h-16 w-full items-stretch sm:h-[72px]">
+      <div className="relative flex h-16 w-full items-stretch sm:h-[72px]">
         {/* ---- Left: flush olive logo box + stacked name ---- */}
         <button
           onClick={() => go('hero')}

@@ -89,6 +89,8 @@ export default function Hero() {
             >
               <a
                 href={featured.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group block w-full max-w-md border-2 border-ink bg-ink text-paper shadow-hard transition-transform hover:-translate-y-1"
               >
                 <div className="relative aspect-[16/10] overflow-hidden border-b-2 border-ink">

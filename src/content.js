@@ -30,7 +30,7 @@ export const CONTENT = {
       kicker: 'The Approach',
       title: 'How I Run PBs Around a Full Life',
       image: '/austin2.jpeg', // REPLACE
-      href: '#', // REPLACE: link to a video / article
+      href: 'https://www.instagram.com/p/DZWRqiaD6Hp/?hl=en&img_index=1',
     },
   },
 

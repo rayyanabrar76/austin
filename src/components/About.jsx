@@ -12,10 +12,17 @@ export default function About() {
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="absolute inset-0 -translate-x-4 translate-y-4 bg-army" />
             <div className="relative aspect-[16/10] w-full overflow-hidden border-2 border-ink bg-paper sm:aspect-[4/5]">
+              {/* mobile image */}
               <img
                 src="/austin.jpg"
                 alt="Jayden Austin"
-                className="h-full w-full object-cover object-top"
+                className="h-full w-full object-cover object-top sm:hidden"
+              />
+              {/* desktop image */}
+              <img
+                src="/austin2.jpeg"
+                alt="Jayden Austin"
+                className="hidden h-full w-full object-cover object-top sm:block"
               />
             </div>
           </div>
@@ -30,7 +37,12 @@ export default function About() {
           </Reveal>
           <div className="mt-6 space-y-4 text-base text-ink/70 sm:text-lg">
             {paragraphs.map((p, i) => (
-              <Reveal key={i} as="p">
+              <Reveal
+                key={i}
+                as="p"
+                // last paragraph is hidden on mobile per request
+                className={i === paragraphs.length - 1 ? 'hidden sm:block' : undefined}
+              >
                 <span>{p}</span>
               </Reveal>
             ))}
