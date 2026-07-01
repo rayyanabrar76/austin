@@ -21,20 +21,21 @@ export default function WhatYouGet() {
           </Reveal>
         </div>
 
+        {/* Mobile: swipeable scroll-snap carousel · md+: 3-col grid */}
         <motion.div
           variants={stagger}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3"
+          className="no-scrollbar -mx-5 mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-5 px-5 pb-4 sm:-mx-8 sm:gap-6 sm:px-8 md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0 md:pb-0"
         >
           {features.map((f) => (
             <motion.div
               key={f.title}
               variants={fadeUp}
-              className="border-2 border-ink bg-paper p-8 text-ink shadow-hard transition-transform hover:-translate-y-1"
+              className="flex shrink-0 basis-[82%] snap-start flex-col border-2 border-ink bg-paper p-8 text-ink shadow-hard transition-transform hover:-translate-y-1 sm:basis-[46%] md:basis-auto"
             >
-              <div className="mb-6 inline-flex border-2 border-ink bg-army p-3 text-paper">
+              <div className="mb-6 inline-flex w-fit border-2 border-ink bg-army p-3 text-paper">
                 {ICONS[f.icon]}
               </div>
               <h3 className="text-2xl tracking-tightest">{f.title}</h3>
@@ -42,6 +43,11 @@ export default function WhatYouGet() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* swipe hint — mobile only */}
+        <p className="mt-4 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-paper/60 md:hidden">
+          <span aria-hidden>←</span> Swipe <span aria-hidden>→</span>
+        </p>
       </div>
     </section>
   )

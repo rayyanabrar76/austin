@@ -44,10 +44,20 @@ export default function Nav() {
           <span className="flex items-center justify-center border-r-2 border-ink bg-army px-3.5 text-paper transition-colors duration-200 group-hover:bg-army-light sm:px-4">
             <Bolt className="h-6 w-6 transition-transform duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 sm:h-7 sm:w-7" />
           </span>
-          <span className="flex flex-col justify-center px-3 text-left font-display text-base uppercase leading-[0.85] tracking-tightest transition-colors duration-200 group-hover:text-army sm:px-4 sm:text-xl">
+          {/* stacked name — desktop only (centred wordmark used on mobile) */}
+          <span className="hidden flex-col justify-center px-3 text-left font-display text-base uppercase leading-[0.85] tracking-tightest transition-colors duration-200 group-hover:text-army sm:px-4 sm:text-xl lg:flex">
             <span>Jayden</span>
             <span>Austin</span>
           </span>
+        </button>
+
+        {/* ---- Mobile: centred wordmark ---- */}
+        <button
+          onClick={() => go('hero')}
+          aria-label={CONTENT.brand}
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap font-display text-lg uppercase leading-none tracking-tightest text-ink transition-colors duration-200 hover:text-army focus:outline-none lg:hidden"
+        >
+          Jayden Austin
         </button>
 
         {/* pushes the nav to the centre */}

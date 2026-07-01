@@ -50,6 +50,15 @@
   .animate-marquee-fast {
     animation: marquee 20s linear infinite;
   }
+
+  /* Hide the scrollbar on swipeable card carousels (still scrolls) */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {

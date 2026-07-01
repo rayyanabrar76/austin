@@ -1,11 +1,9 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import StatsBar from './components/StatsBar'
 import Marquee from './components/Marquee'
 import WhoItsFor from './components/WhoItsFor'
 import WhatYouGet from './components/WhatYouGet'
 import VideoQuote from './components/VideoQuote'
-import Proof from './components/Proof'
 import About from './components/About'
 import FreeGuide from './components/FreeGuide'
 import ApplyForm from './components/ApplyForm'
@@ -18,14 +16,12 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <StatsBar />
         <Marquee />
         <WhoItsFor />
         <FreeGuide />
+         <About />
         <WhatYouGet />
         <VideoQuote />
-        <Proof />
-        <About />
         <ApplyForm />
         <Instagram />
       </main>

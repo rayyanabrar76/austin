@@ -8,10 +8,10 @@ export default function About() {
     <section id="about" className="border-b-2 border-ink bg-paper-dark">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 py-16 sm:gap-12 sm:px-8 sm:py-28 lg:grid-cols-2">
         {/* REPLACE: Jayden portrait / training photo */}
-        <Reveal className="order-1 lg:order-none">
+        <Reveal>
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <div className="absolute inset-0 -translate-x-4 translate-y-4 bg-army" />
-            <div className="relative aspect-[4/5] w-full overflow-hidden border-2 border-ink bg-paper">
+            <div className="relative aspect-[16/10] w-full overflow-hidden border-2 border-ink bg-paper sm:aspect-[4/5]">
               <img
                 src="/austin.jpg"
                 alt="Jayden Austin"
