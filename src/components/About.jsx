@@ -6,7 +6,7 @@ export default function About() {
   const { heading, paragraphs } = CONTENT.about
   return (
     <section id="about" className="border-b-2 border-ink bg-paper-dark">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 py-16 sm:gap-12 sm:px-8 sm:py-28 lg:grid-cols-2">
         {/* REPLACE: Jayden portrait / training photo */}
         <Reveal className="order-1 lg:order-none">
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
@@ -28,7 +28,7 @@ export default function About() {
           <Reveal>
             <Heading className="mt-4">{heading}</Heading>
           </Reveal>
-          <div className="mt-6 space-y-4 text-lg text-ink/70">
+          <div className="mt-6 space-y-4 text-base text-ink/70 sm:text-lg">
             {paragraphs.map((p, i) => (
               <Reveal key={i} as="p">
                 <span>{p}</span>
@@ -36,7 +36,7 @@ export default function About() {
             ))}
           </div>
           <Reveal>
-            <button onClick={() => scrollToId('apply')} className="btn-primary mt-8">
+            <button onClick={() => scrollToId('apply')} className="btn-primary mt-8 w-full sm:w-auto">
               Work With Me
             </button>
           </Reveal>
