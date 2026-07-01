@@ -13,7 +13,7 @@ export default function Hero() {
              face owns the top of the frame (nickbare.com style) ---- */}
       <section
         id="hero"
-        className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden border-b-2 border-ink bg-paper pt-24"
+        className="relative flex min-h-[100svh] flex-col justify-start overflow-hidden border-b-2 border-ink bg-paper pt-[46vh] sm:pt-[42vh] lg:justify-end lg:pt-24"
       >
         {/* Full-bleed background photo */}
         <div className="absolute inset-0 z-0 overflow-hidden">
